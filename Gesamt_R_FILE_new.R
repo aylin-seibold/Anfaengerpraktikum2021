@@ -11,7 +11,10 @@
 ## Betreuer: Herr Patrick Kaiser 
 
 ## Datum: München, den 23.12.2021
-
+## Instruktionen:
+## 1. Gehen sie sicher, dass sie alle librarys installiert haben
+## 2. Erstellen sie ein R-Projekt mit der Github URL "https://github.com/aylin-seibold/Anfaengerpraktikum2021"
+## 3. Führen sie dieses File aus
 ### Librarys laden
 
 library(dplyr)
