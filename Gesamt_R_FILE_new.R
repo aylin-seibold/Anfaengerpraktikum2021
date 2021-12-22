@@ -851,5 +851,72 @@ data_IAA_germany <- NULL
 data_IAA_bayern <- NULL
 data_IAA_muenchen <- NULL
 data_IAA_bayern_ohne_muenchen <- NULL
-
+Aktuell_Deutschland_COVID_19_Hospitalisierungen <- NULL
+baden_Wuerttemberg_hospit <- NULL
+baden_Wuerttemberg_hospit_ab_11_Okt <- NULL
+bayern_hospit <- NULL
+bayern_hospit_ab_11_Okt <- NULL
+berlin_hospit <- NULL
+berlin_hospit_ab_11_Okt <- NULL
+BLM_muenchen_plot <- NULL
+BLM_bayern_ohne_muenchen_plot <- NULL
+brandenburg_hospit <- NULL
+brandenburg_hospit_ab_11_Okt <- NULL
+bremen_hospit <- NULL
+bremen_hospit_ab_11_Okt <- NULL
+CovidDemo_bayern_ohne_muenchen_plot <- NULL
+CovidDemo_muenchen_plot <- NULL
+deutschland_hospt <- NULL
+deutschland_hospt_ab_11_Okt <- NULL
+divi_17_11 <- NULL
+EM_bayern_ohne_muenchen_plot <- NULL
+EM_muenchen_plot <- NULL
+hamburg_hospit <- NULL
+hamburg_hospit_ab_11_Okt <- NULL
+hessen_hospit<- NULL
+hessen_hospit_ab_11_Okt<- NULL
+hosp<- NULL
+hosp_7tage_baden_Wuerttemberg<- NULL
+hosp_7tage_bayern<- NULL
+hosp_7tage_berlin<- NULL
+hosp_7tage_brandenburg<- NULL
+hosp_7tage_bremen<- NULL
+hosp_7tage_deutschland<- NULL
+hosp_7tage_hamburg<- NULL
+hosp_7tage_hessen<- NULL
+hosp_7tage_mecklenburg_Vorpommern<- NULL
+hosp_7tage_niedersachsen<- NULL
+hosp_7tage_nordrhein_westfalen<- NULL
+hosp_7tage_rheinland_pfalz<- NULL
+hosp_7tage_saarland<- NULL
+hosp_7tage_sachsen<- NULL
+hosp_7tage_sachsen_anhalt<- NULL
+hosp_7tage_schleswig_holstein<- NULL
+hosp_7tage_thueringen<- NULL
+IAA_bayern_ohne_muenchen_plot<- NULL
+IAA_muenchen_plot<- NULL
+mecklenburg_Vorpommern_hospit<- NULL
+mecklenburg_Vorpommern_hospit_ab_11_Okt<- NULL
+niedersachsen_hospit<- NULL
+niedersachsen_hospit_ab_11_Okt<- NULL
+nordrhein_westfalen_hospit<- NULL
+nordrhein_westfalen_hospit_ab_11_Okt<- NULL
+plot_impfquote<- NULL
+rheinland_pfalz_hospit<- NULL
+rheinland_pfalz_hospit_ab_11_Okt<- NULL
+RKI_COVID19<- NULL
+RKI_Infektionen<- NULL
+saarland_hospit<- NULL
+saarland_hospit_ab_11_Okt<- NULL
+sachsen_anhalt_hospit<- NULL
+sachsen_anhalt_hospit_ab_11_Okt<- NULL
+sachsen_hospit<- NULL
+sachsen_hospit_ab_11_Okt<- NULL
+schleswig_holstein_hospit<- NULL
+schleswig_holstein_hospit_ab_11_Okt<- NULL
+sieben_tage_inzidenz<- NULL
+sieben_tage_inzidenz_oktober<- NULL
+thueringen_hospit<- NULL
+thueringen_hospit_ab_11_Okt<- NULL
+vaccination_timeseries<- NULL
 ### Ende
