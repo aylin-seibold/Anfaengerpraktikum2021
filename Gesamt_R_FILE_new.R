@@ -30,7 +30,7 @@ library(pals)
 ### Datensätze einlesen 
 
 ### RKI_COVID19 Datensatz
-RKI_COVID19 <- read.csv("RKI_COVID19.csv", fileEncoding = "UTF-8")
+RKI_COVID19 <- read.csv(unz("RKI_COVID19.zip", "RKI_COVID19.csv"), fileEncoding = "UTF-8")
 RKI_COVID19[,9] <- as.Date(RKI_COVID19[,9]) 
 
 ### Subdatensatz RKI_Covid19
@@ -392,8 +392,8 @@ ggplot()+
 # Subdatensätze erstellen
 data_BLM_germany <- subset(RKI_COVID19, Meldedatum >= "2020-05-06" & Meldedatum <= "2020-08-06" )
 data_BLM_bayern <- subset(data_BLM_germany, IdBundesland == "9" )
-data_BLM_muenchen <- subset(data_BLM_bayern, Landkreis == "SK München")
-data_BLM_bayern_ohne_muenchen  <- subset(data_BLM_bayern, Landkreis != "SK München")
+data_BLM_muenchen <- subset(data_BLM_bayern, Landkreis == "SK MÃ¼nchen")
+data_BLM_bayern_ohne_muenchen  <- subset(data_BLM_bayern, Landkreis != "SK MÃ¼nchen")
 data_BLM_germany <- aggregate(data_BLM_germany$AnzahlFall, data_BLM_germany[9], sum)
 data_BLM_bayern <- aggregate(data_BLM_bayern$AnzahlFall, data_BLM_bayern[9], sum)
 data_BLM_muenchen <- aggregate(data_BLM_muenchen$AnzahlFall, data_BLM_muenchen[9], sum)
@@ -501,8 +501,8 @@ data_BLM_bayern_ohne_muenchen <- NULL
 ### Events2
 data_CovidDemo_germany <- subset(RKI_COVID19, Meldedatum >= "2020-08-12" & Meldedatum <= "2020-11-12" )
 data_CovidDemo_bayern <- subset(data_CovidDemo_germany, IdBundesland == "9" )
-data_CovidDemo_muenchen <- subset(data_CovidDemo_bayern, Landkreis == "SK München")
-data_CovidDemo_bayern_ohne_muenchen  <- subset(data_CovidDemo_bayern, Landkreis != "SK München")
+data_CovidDemo_muenchen <- subset(data_CovidDemo_bayern, Landkreis == "SK MÃ¼nchen")
+data_CovidDemo_bayern_ohne_muenchen  <- subset(data_CovidDemo_bayern, Landkreis != "SK MÃ¼nchen")
 data_CovidDemo_germany <- aggregate(data_CovidDemo_germany$AnzahlFall, data_CovidDemo_germany[9], sum)
 data_CovidDemo_bayern <- aggregate(data_CovidDemo_bayern$AnzahlFall, data_CovidDemo_bayern[9], sum)
 data_CovidDemo_muenchen <- aggregate(data_CovidDemo_muenchen$AnzahlFall, data_CovidDemo_muenchen[9], sum)
@@ -611,8 +611,8 @@ data_CovidDemo_bayern_ohne_muenchen <- NULL
 # Datensätze erstellen
 data_EM_germany <- subset(RKI_COVID19, Meldedatum >= "2021-05-11" & Meldedatum <= "2021-09-11" )
 data_EM_bayern <- subset(data_EM_germany, IdBundesland == "9" )
-data_EM_muenchen <- subset(data_EM_bayern, Landkreis == "SK München")
-data_EM_bayern_ohne_muenchen  <- subset(data_EM_bayern, Landkreis != "SK München")
+data_EM_muenchen <- subset(data_EM_bayern, Landkreis == "SK MÃ¼nchen")
+data_EM_bayern_ohne_muenchen  <- subset(data_EM_bayern, Landkreis != "SK MÃ¼nchen")
 data_EM_germany <- aggregate(data_EM_germany$AnzahlFall, data_EM_germany[9], sum)
 data_EM_bayern <- aggregate(data_EM_bayern$AnzahlFall, data_EM_bayern[9], sum)
 data_EM_muenchen <- aggregate(data_EM_muenchen$AnzahlFall, data_EM_muenchen[9], sum)
@@ -727,8 +727,8 @@ data_EM_bayern_ohne_muenchen <- NULL
 # Subdatensätze erstellen
 data_IAA_germany <- subset(RKI_COVID19, Meldedatum >= "2021-08-07" & Meldedatum <= "2021-11-12" )
 data_IAA_bayern <- subset(data_IAA_germany, IdBundesland == "9" )
-data_IAA_muenchen <- subset(data_IAA_bayern, Landkreis == "SK München")
-data_IAA_bayern_ohne_muenchen  <- subset(data_IAA_bayern, Landkreis != "SK München")
+data_IAA_muenchen <- subset(data_IAA_bayern, Landkreis == "SK MÃ¼nchen")
+data_IAA_bayern_ohne_muenchen  <- subset(data_IAA_bayern, Landkreis != "SK MÃ¼nchen")
 data_IAA_germany <- aggregate(data_IAA_germany$AnzahlFall, data_IAA_germany[9], sum)
 data_IAA_bayern <- aggregate(data_IAA_bayern$AnzahlFall, data_IAA_bayern[9], sum)
 data_IAA_muenchen <- aggregate(data_IAA_muenchen$AnzahlFall, data_IAA_muenchen[9], sum)
