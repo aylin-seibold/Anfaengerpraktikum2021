@@ -15,7 +15,7 @@
 
 
 ### Dieses Skript wird in jeden unserer folgenden R-Files als erstes durchgeführt 
-### (durch den Befehl: source("Librarys und Datensaetze"))
+### (durch den Befehl: source("Librarys und Datensaetze.R"))
 ### und ist somit die Grundlage für das Erstellen unserer Subdatensätze und Graphiken.
 
 
@@ -60,18 +60,18 @@ divi_17_11 <- read_csv("DIVI-Intensivregister_2021-11-17_12-15.csv")
 # In Excel modifizierter Datensatz. Ursprünglicher Datensatz: Fallzahlen_Kum_Tab.xlsx
 # Datensatz für 7-Tage-Inzidenz für Covid-Infektionen
 sieben_tage_inzidenz <- as.data.frame(read_excel("Bd_Inz.xlsx", na="NA", sheet="Sheet2"))
-sieben_tage_inzidenz[,1] <-as.Date(sieben_tage_inzidenz[,1])
+sieben_tage_inzidenz[,1] <- as.Date(sieben_tage_inzidenz[,1])
 
 
 # germany_vaccinations_timeseries_v2.tsv
 # Datensatz für Impfquoten
-vaccination_timeseries <-read_tsv("germany_vaccinations_timeseries_v2.tsv")
-myformat2<-"%Y-%m-%d"
-vaccination_timeseries$date<-as.Date(vaccination_timeseries$date,myformat2)
+vaccination_timeseries <- read_tsv("germany_vaccinations_timeseries_v2.tsv")
+myformat2 <-"%Y-%m-%d"
+vaccination_timeseries$date <- as.Date(vaccination_timeseries$date, myformat2)
 
 
 # Aktuell_Deutschland_COVID-19-Hospitalisierungen.csv
 # Datensatz für 7-Tage-Inzidenz für Covid-Hospitalisierungen
-Aktuell_Deutschland_COVID_19_Hospitalisierungen <-read.csv("Aktuell_Deutschland_COVID-19-Hospitalisierungen.csv")
+Aktuell_Deutschland_COVID_19_Hospitalisierungen <- read.csv("Aktuell_Deutschland_COVID-19-Hospitalisierungen.csv")
 
 
