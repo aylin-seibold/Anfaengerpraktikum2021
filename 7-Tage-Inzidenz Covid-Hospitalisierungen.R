@@ -36,7 +36,8 @@ hosp_7tage_thueringen <- subset(hosp, Bundesland_Id == "16")
 hosp_7tage_deutschland <- subset(hosp, Bundesland_Id == "0")
 
 
-# Hospitalisieurngsfaelle Bremen, Sachsen , Bayern und Deustchland
+# Neue Datensätze erstellt für Hospitalisieurngsfaelle je Bundesland und für Deutschland 
+# Hier wurde alle Hospitalisierungsfälle eines Tages zusammengerechnet
 bremen_hospit <- aggregate(hosp_7tage_bremen$`X7T_Hospitalisierung_Faelle`, hosp_7tage_bremen[1], sum)
 bremen_hospit$Datum <- as.Date(bremen_hospit$Datum)
 
@@ -49,8 +50,6 @@ sachsen_hospit$Datum <- as.Date(sachsen_hospit$Datum)
 deutschland_hospt <- aggregate(hosp_7tage_deutschland$`X7T_Hospitalisierung_Faelle`, hosp_7tage_deutschland[1], sum)
 deutschland_hospt$Datum <- as.Date(deutschland_hospt$Datum)
 
-
-# andere Bundesländer Hospitalisierungsfälle
 schleswig_holstein_hospit <- aggregate(hosp_7tage_schleswig_holstein$`X7T_Hospitalisierung_Faelle`, hosp_7tage_schleswig_holstein[1], sum)
 schleswig_holstein_hospit$Datum <- as.Date(schleswig_holstein_hospit$Datum)
 
@@ -142,6 +141,7 @@ ggplot()+
   theme(axis.text.x = element_text(color=axiscolors)) 
 
 
+# Für die Graphik ab Oktober wurde nochmal Subdatensätze erstellt: 
 # Subdatensätze 7-Tage-Inzidenz für Covid-Hospitalisierungen ab Oktober 2021
 bremen_hospit_ab_11_Okt <-  subset(bremen_hospit, Datum >= "2021-10-11"  )
 bayern_hospit_ab_11_Okt <-  subset(bayern_hospit, Datum >= "2021-10-11"  )
